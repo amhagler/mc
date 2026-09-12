@@ -648,6 +648,14 @@
       .test-screen-preview{background:#bfc4ca;padding:28px}
       .test-screen-preview .polished-test{width:8.5in!important;min-height:11in!important;padding:.72in .68in .62in!important;background:#fff!important;box-shadow:0 3px 18px #0004!important}
       .preview-heading:after{content:"Letter-size print layout";margin-left:auto;padding:5px 9px;border-radius:999px;background:#e8eef6;color:#36536e;font-size:11px;font-weight:700}
+      .question-card:before,.reading-card:before{display:flex;align-items:center;justify-content:center;padding-top:24px;font-size:30px}
+      .question-card:after,.reading-card:after{top:17px;line-height:1.1}
+      .question-card:not(.active){min-height:104px;padding-top:20px!important;padding-bottom:20px!important}
+      .question-card:not(.active) .question-top{display:block}
+      .question-card:not(.active) .question-top select,.question-card:not(.active) .question-rules{display:none!important}
+      .question-card:not(.active) .question-top textarea{display:-webkit-box;width:100%;height:55px;max-height:55px;line-height:1.45;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:ellipsis;white-space:normal}
+      .reading-card:not(.active){min-height:88px;padding-top:22px!important;padding-bottom:18px!important}
+      .reading-card:not(.active) .card-heading span{display:none}
       .polished-test{display:block!important;width:8.5in!important;min-height:11in!important;height:auto!important;padding:.72in .68in .62in!important;background:#fff!important;color:#111!important;font-family:Georgia,"Times New Roman",serif!important}
       .test-running-header{display:none}
       .test-cover-head{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:.16in;border-bottom:2px solid #1e3550}
