@@ -806,6 +806,14 @@
       .test-print-root .paginated-test-page{box-sizing:border-box!important;width:8.5in!important;height:11in!important;min-height:11in!important;padding:.45in .5in .5in!important;overflow:hidden!important}
       }
       .test-running-header span{display:none}
+      .print-document{counter-reset:none!important}
+      .written-pages{break-before:page;page-break-before:always}
+      .print-document .test-document-footer{display:none}
+      @media print{.test-print-root .print-document{counter-reset:none!important}
+      .test-print-root .test-document-footer{display:flex;position:static!important;break-inside:avoid;page-break-inside:avoid;margin-top:.18in;padding-top:.05in;border-top:1px solid #9aa5b1;justify-content:space-between;color:#5f6670;font:8pt Arial,sans-serif}
+      .test-print-root .written-pages{break-before:page!important;page-break-before:always!important}
+      .test-print-root .page-number:after{content:counter(page)}
+      }
       .print-document{box-sizing:border-box;width:7.5in;min-height:10.05in;margin:0 auto;padding:0;background:#fff;color:#111;font-family:Georgia,"Times New Roman",serif;counter-reset:page}
       .print-document .test-flow-block{break-inside:avoid;page-break-inside:avoid}
       .print-document .print-test-flow{display:block}
